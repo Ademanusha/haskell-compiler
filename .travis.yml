@@ -1,0 +1,11 @@
+language: rust
+rust:
+  - nightly
+  
+matrix:
+  allow_failures:
+    - rust: nightly
+    
+script:
+  - cargo build --verbose --all
+  - cargo test main.rs
