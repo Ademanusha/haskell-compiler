@@ -22,6 +22,7 @@ macro_rules! write_core_expr(
             Lambda(ref arg, ref body) => write!($f, "({} -> {})", *arg, *body),
             Let(ref bindings, ref body) => {
                 try!(write!($f, "let {{\n"));
+                println("anusha",f);
                 for bind in bindings.iter() {
                     try!(write!($f, "; {}\n", bind));
                 }
