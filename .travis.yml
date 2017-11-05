@@ -8,4 +8,4 @@ matrix:
     
 script:
   - cargo build --verbose --all
-  - cargo PrimeFactors.hs
+  - cargo Test.hs
